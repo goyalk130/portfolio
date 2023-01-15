@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+*{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-text-stroke-color: #0DB760;
+}
+html{
+    width: 100vw;
+}
+body{
+    width:100%;
+    overflow-x: hidden;
+}
+.absolute{
+    position: absolute;
+}
+.dark{
+    background: black;
+    color: #0DB760;
+    
+}
+.light{
+    background: white;
+    color: #21AAE1;
+}
+.container{
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+.mode{
+    z-index: 20;
+    width: 25px;
+    height: 25px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+.mode:nth-child(2){
+    top: 100vh;
+}
+.block{
+    font-family: 'League Spartan', sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.first{
+    height: 100vh;
+    width: 100%;
+}
+.first .img-container{
+    background-image: url(/img/bg_dark.svg);
+    background-size: cover;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.img-container img{
+    width: 100%;
+    
+}
+.first .name-container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 10;
+}
+.first .name{
+    text-align: center;
+    width: 90%;
+    color: white;
+    font-size: 2rem;
+}
+.first .fade-gradinet{
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    height: 20%;
+    background: linear-gradient(transparent,black);
+    bottom: 0;
+}
+
+.second{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.second-heading{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    height: 10%;
+}
+.heading{
+    width: 100%;
+    font-size: 270%;
+    margin: 1em;
+    text-align: center;
+    -webkit-text-stroke-width: 0.01em;
+    color: transparent;
+    letter-spacing: 0.01em;
+}
+.heading:nth-child(2){
+    font-size: 250%;
+    letter-spacing: 0em;
+    color: inherit;
+}
+.second .profile-pic-container{
+    /* height: 60%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.second .profile-pic-container div{
+    background: rgb(194, 194, 194);
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+}
+.img-con img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.second .bio-container{
+    margin: 3em 14em;
+    /* height: 30%; */
+    height: fit-content;
+    color:var(inherit);
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.third{
+    /* height: 70vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    /* border: .1em solid #0DB760; */
+}
+.skill-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-wrap{
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.skill-image{
+    order: 1;
+    width: 33%;
+    margin: 10px;
+}
+.skill-image img{
+    width: 100%;
+}
+.fourth{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.projects-container{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.projects-container .project{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    /* border: 1px solid; */
+}
+.project img{
+    text-align: center;
+    width: 100%;
+}
+.fifth{
+    padding-top: 5em;
+}
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+form > *{
+    width: 100%;
+    margin: 1em;
+    background: inherit;
+    color: inherit;
+    padding: 3em 2em;
+    border: 0.1em solid ;
+}
+.submit{
+    padding: 1.5em;
+    width: 20%;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+.submit:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 1024px) {
+    .second .bio-container{
+        margin: 3em 5em;
+    }
+    .skill-container{
+        width: 70%;
+    }
+}
+@media (max-width:720px) {
+    
+    .block{
+        height: fit-content;
+    }
+    .first{
+        height: 100vh;
+    }
+}
