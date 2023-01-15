@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Portfolio</title>
+    
+  </head>
+  <body>
+    <div class="container dark">
+        <button onclick="change()" class="mode"></button>
+        <button onclick="changeText()" class="mode"></button>
+        <div class="first block">
+        <div class="img-container"></div>
+        <div class="name-container">
+          <div class="name">
+            <h1 class="my-name">Karan Goyal</h1>
+          </div>
+        </div>
+        <div class="fade-gradinet"></div>
+      </div>
+      <div class="second block">
+        <div class="second-heading">
+          <h2 class="heading absolute">ABOUT ME</h2>
+          <h2 class="heading">ABOUT ME</h2>
+        </div>
+        <div class="profile-pic-container">
+          <div class="img-con">
+            <img src="/img/mine.jpg" />
+          </div>
+        </div>
+        <div class="bio-container">
+          <p class="bio">
+            Hello, my name is Karan Goyal, and I am a MERN stack developer,
+            freelancer, teacher. I began my developer journey almost three years
+            ago and have since worked for several startups as well as taught
+            development to many students.
+          </p>
+        </div>
+      </div>
+      <div class="third block">
+        <div class="second-heading">
+          <h2 class="heading absolute">MY SKILLS</h2>
+          <h2 class="heading">MY SKILLS</h2>
+        </div>
+        <div class="skill-container">
+          <div class="skills-wrap">
+            <div class="skill-image">
+              <img src="/img/html.svg" />
+            </div>
+            <div class="skill-image">
+              <img src="/img/css.svg" />
+            </div>
+            <div class="skill-image">
+              <img src="/img/js.svg" />
+            </div>
+          </div>
+          <div class="skills-wrap">
+            <div class="skill-image">
+              <img src="/img/linux.svg" />
+            </div>
+            <div class="skill-image">
+              <img src="/img/console.svg" />
+            </div>
+            <div class="skill-image">
+              <img src="/img/react.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fourth block">
+        <div class="second-heading">
+          <h2 class="heading absolute">MY PROJECTS</h2>
+          <h2 class="heading">MY PROJECTS</h2>
+        </div>
+        <div class="projects-container">
+          <div class="project"><img alt="this image is not available" src="/img/project1.png" /></div>
+          <div class="project"><img src="/img/project2.png" /></div>
+        </div>
+      </div>
+      <div class="fifth block">
+        <div class="second-heading">
+          <h2 class="heading absolute">CONTACT US</h2>
+          <h2 class="heading">CONTACT US</h2>
+        </div>
+        <div class="form-container">
+          <form>
+            <input placeholder="NAME" class="name" type="text" />
+            <input placeholder="EMAIL" class="email" type="email" />
+            <textarea placeholder="COMMENT" class="comment" name="" id="" cols="30" rows="10"></textarea>
+            <button class="submit" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+
+        
+        function change(){
+            document.querySelector(".container").classList.toggle("dark");
+            document.querySelector(".container").classList.toggle("light");
+        }
+    </script>
+  </body>
+</html>
